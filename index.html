@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>My TO DO List</h1>
+    </header>
+    <main>
+      <div class="input-container">
+        <input
+          type="text"
+          id="to-do-input"
+          placeholder="write something..."
+          autocomplete="off"
+          maxlength="100"
+        />
+        <button type="button" onclick="addTaskHandler()">Add Task</button>
+      </div>
+      <div class="task-list-container">
+        <ul id="task-list"></ul>
+      </div>
+    </main>
+  </body>
+</html>
